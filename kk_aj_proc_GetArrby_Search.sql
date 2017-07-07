@@ -1,7 +1,7 @@
 USE [dnndev_v902.me]
 GO
 
-/****** Object:  StoredProcedure [dbo].[kk_aj_proc_GetArrby_Search]    Script Date: 2017-04-28 16:25:18 ******/
+/****** Object:  StoredProcedure [dbo].[kk_aj_proc_GetArrby_Search]    Script Date: 2017-07-07 11:03:50 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -49,7 +49,7 @@ CREATE PROCEDURE [dbo].[kk_aj_proc_GetArrby_Search]
 AS
 BEGIN
 if @rolltypAdmin = 0 and @arrStatusTyp < 4
-		SELECT      kk_aj_tbl_Arrangemang.ArrID,kk_aj_tbl_Arrangemang.Datum, kk_aj_tbl_content.Rubrik, kk_aj_tbl_content.Underrubrik, kk_aj_tbl_Arrangemang.Publicerad, 
+		SELECT      kk_aj_tbl_Arrangemang.ArrID,kk_aj_tbl_Arrangemang.Datum, kk_aj_tbl_content.Rubrik, kk_aj_tbl_content.Underrubrik, kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.UtovarID,
 					kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus,
 					(SELECT TOP (1) arrangemangtyp
 					FROM kk_aj_tbl_Arrangemangtyp
@@ -90,7 +90,7 @@ if @rolltypAdmin = 0 and @arrStatusTyp < 4
 		ORDER BY kk_aj_tbl_arridtoContent.datum DESC
 
 if @rolltypAdmin = 0 and @arrStatusTyp = 4
-		SELECT      kk_aj_tbl_Arrangemang.ArrID,kk_aj_tbl_Arrangemang.Datum, kk_aj_tbl_content.Rubrik, kk_aj_tbl_content.Underrubrik, kk_aj_tbl_Arrangemang.Publicerad, 
+		SELECT      kk_aj_tbl_Arrangemang.ArrID,kk_aj_tbl_Arrangemang.Datum, kk_aj_tbl_content.Rubrik, kk_aj_tbl_content.Underrubrik, kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.UtovarID,
 					kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus,
 					(SELECT        TOP (1) arrangemangtyp
 					FROM            kk_aj_tbl_Arrangemangtyp
@@ -131,7 +131,7 @@ if @rolltypAdmin = 0 and @arrStatusTyp = 4
 		ORDER BY kk_aj_tbl_arridtoContent.datum DESC
 
 if @rolltypAdmin = 1 and @arrStatusTyp < 4
-		SELECT      kk_aj_tbl_Arrangemang.ArrID,kk_aj_tbl_Arrangemang.Datum, kk_aj_tbl_content.Rubrik, kk_aj_tbl_content.Underrubrik, kk_aj_tbl_Arrangemang.Publicerad, 
+		SELECT      kk_aj_tbl_Arrangemang.ArrID,kk_aj_tbl_Arrangemang.Datum, kk_aj_tbl_content.Rubrik, kk_aj_tbl_content.Underrubrik, kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.UtovarID,
 					kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus,
 					(SELECT        TOP (1) arrangemangtyp
 					FROM            kk_aj_tbl_Arrangemangtyp
@@ -151,7 +151,7 @@ if @rolltypAdmin = 1 and @arrStatusTyp < 4
 		ORDER BY kk_aj_tbl_arridtoContent.datum DESC
 
 if @rolltypAdmin = 1 and @arrStatusTyp = 4
-		SELECT      kk_aj_tbl_Arrangemang.ArrID,kk_aj_tbl_Arrangemang.Datum, kk_aj_tbl_content.Rubrik, kk_aj_tbl_content.Underrubrik, kk_aj_tbl_Arrangemang.Publicerad, 
+		SELECT      kk_aj_tbl_Arrangemang.ArrID,kk_aj_tbl_Arrangemang.Datum, kk_aj_tbl_content.Rubrik, kk_aj_tbl_content.Underrubrik, kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.UtovarID,
 					kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus,
 					(SELECT        TOP (1) arrangemangtyp
 					FROM            kk_aj_tbl_Arrangemangtyp

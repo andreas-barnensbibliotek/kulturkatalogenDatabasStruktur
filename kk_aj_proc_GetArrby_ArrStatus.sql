@@ -1,12 +1,13 @@
 USE [dnndev_v902.me]
 GO
 
-/****** Object:  StoredProcedure [dbo].[kk_aj_proc_GetArrby_ArrStatus]    Script Date: 2017-04-28 16:25:08 ******/
+/****** Object:  StoredProcedure [dbo].[kk_aj_proc_GetArrby_ArrStatus]    Script Date: 2017-07-07 11:01:06 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
+
 
 -- =============================================
 -- Author:		Andreas Josefsson
@@ -29,7 +30,7 @@ GO
 --							vilket är Arkiverade poster då skall alla visningsperioder visas
 -- =============================================
 CREATE PROCEDURE [dbo].[kk_aj_proc_GetArrby_ArrStatus] 
-	-- Add the parameters for the stored procedure here
+-- Add the parameters for the stored procedure here
 	@arrStatusTyp int,
 	@rolltypAdmin int,
 	@roll1 int,
@@ -59,7 +60,7 @@ if @rolltypAdmin = 0 and @arrStatusTyp < 4
 											kk_aj_tbl_arridtoContent AS kk_aj_tbl_arridtoContent_1 ON kk_aj_tbl_content_1.Contentid = kk_aj_tbl_arridtoContent_1.contentid
 				WHERE        (kk_aj_tbl_arridtoContent_1.arrid = kk_aj_tbl_Arrangemang.ArrID and kk_aj_tbl_arridtoContent_1.Version = 1)
 				) AS UnderRubrik,					
-				kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus, 
+				kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus, kk_aj_tbl_Arrangemang.UtovarID,
 				kk_aj_tbl_Arrangemangtyp.arrangemangtyp, kk_aj_tbl_Konstformtyp.konstform, kk_aj_tbl_utovare.Organisation, Users.Username
 		FROM	kk_aj_tbl_Arrangemang INNER JOIN
 				kk_aj_tbl_utovare ON kk_aj_tbl_Arrangemang.UtovarID = kk_aj_tbl_utovare.UtovarID INNER JOIN
@@ -93,7 +94,7 @@ if @rolltypAdmin = 0 and @arrStatusTyp = 4
 											kk_aj_tbl_arridtoContent AS kk_aj_tbl_arridtoContent_1 ON kk_aj_tbl_content_1.Contentid = kk_aj_tbl_arridtoContent_1.contentid
 				WHERE        (kk_aj_tbl_arridtoContent_1.arrid = kk_aj_tbl_Arrangemang.ArrID)
 				) AS UnderRubrik, 
-				kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus, 
+				kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus,  kk_aj_tbl_Arrangemang.UtovarID,
 				kk_aj_tbl_Arrangemangtyp.arrangemangtyp, kk_aj_tbl_Konstformtyp.konstform, kk_aj_tbl_utovare.Organisation, Users.Username
 		FROM	kk_aj_tbl_Arrangemang INNER JOIN
 				kk_aj_tbl_utovare ON kk_aj_tbl_Arrangemang.UtovarID = kk_aj_tbl_utovare.UtovarID INNER JOIN
@@ -129,7 +130,7 @@ if @rolltypAdmin = 1 and @arrStatusTyp < 4
 											kk_aj_tbl_arridtoContent AS kk_aj_tbl_arridtoContent_1 ON kk_aj_tbl_content_1.Contentid = kk_aj_tbl_arridtoContent_1.contentid
 				WHERE        (kk_aj_tbl_arridtoContent_1.arrid = kk_aj_tbl_Arrangemang.ArrID and kk_aj_tbl_arridtoContent_1.Version = 1)
 				) AS UnderRubrik,						
-				kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus, 
+				kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus,  kk_aj_tbl_Arrangemang.UtovarID,
 				kk_aj_tbl_Arrangemangtyp.arrangemangtyp, kk_aj_tbl_Konstformtyp.konstform, kk_aj_tbl_utovare.Organisation, Users.Username
 		FROM	kk_aj_tbl_Arrangemang INNER JOIN
 				kk_aj_tbl_utovare ON kk_aj_tbl_Arrangemang.UtovarID = kk_aj_tbl_utovare.UtovarID INNER JOIN
@@ -152,7 +153,7 @@ if @rolltypAdmin = 1 and @arrStatusTyp = 4
 											kk_aj_tbl_arridtoContent AS kk_aj_tbl_arridtoContent_1 ON kk_aj_tbl_content_1.Contentid = kk_aj_tbl_arridtoContent_1.contentid
 				WHERE        (kk_aj_tbl_arridtoContent_1.arrid = kk_aj_tbl_Arrangemang.ArrID and kk_aj_tbl_arridtoContent_1.Version = 1)
 				) AS UnderRubrik,					
-				kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus, 
+				kk_aj_tbl_Arrangemang.Publicerad, kk_aj_tbl_Arrangemang.LookedAt, kk_aj_tbl_ArrangemangStatus.ArrangemangStatus,  kk_aj_tbl_Arrangemang.UtovarID,
 				kk_aj_tbl_Arrangemangtyp.arrangemangtyp, kk_aj_tbl_Konstformtyp.konstform, kk_aj_tbl_utovare.Organisation, Users.Username
 		FROM	kk_aj_tbl_Arrangemang INNER JOIN
 				kk_aj_tbl_utovare ON kk_aj_tbl_Arrangemang.UtovarID = kk_aj_tbl_utovare.UtovarID INNER JOIN
@@ -163,6 +164,8 @@ if @rolltypAdmin = 1 and @arrStatusTyp = 4
 		WHERE	(kk_aj_tbl_ArrangemangStatus.ArrangemangStatusID = @arrStatusTyp)
 
 END
+
+
 
 GO
 

@@ -1,7 +1,7 @@
 USE [dnndev_v902.me]
 GO
 
-/****** Object:  Table [dbo].[kk_aj_tbl_Utovare]    Script Date: 2017-04-28 16:24:34 ******/
+/****** Object:  Table [dbo].[kk_aj_tbl_Utovare]    Script Date: 2017-07-06 08:47:13 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -20,6 +20,8 @@ CREATE TABLE [dbo].[kk_aj_tbl_Utovare](
 	[Epost] [nvarchar](150) NULL,
 	[Kommun] [nvarchar](80) NULL,
 	[Hemsida] [nvarchar](250) NULL,
+	[Ovrigt] [nvarchar](250) NULL,
+	[Bild] [nvarchar](250) NULL,
  CONSTRAINT [PK_kk_aj_tbl_utovare] PRIMARY KEY CLUSTERED 
 (
 	[UtovarID] ASC
