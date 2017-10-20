@@ -1,0 +1,1373 @@
+Anrop
+http://kulturkatalog.kivdev.se:8080/Api_v2/arrangemang/bystatus/uid/1/typ/1/devkey/alf?type=json&callback=testar
+
+
+
+
+
+
+
+//http://kulturkatalog.kivdev.se:8080/Api_v1/test/devkey/testar
+
+{"namn":"Andreas ny build","devkey":"testar"}
+
+
+{
+	"kk_aj_admin": {
+		"newannonscount": "2",
+		"newmessages": {
+			"messagecount": "1",
+			"messlist": [{
+				"messtitle": "Nu laddar vi om servern",
+				"messurl": "www.barnensbibliotek.se"
+			},
+			{
+				"messtitle": "Detta funkar ju bra",
+				"messurl": "www.barnensbibliotek.se"
+			}
+			]
+		},
+		"userinfo": {
+			"userid": "105",
+			"username": "Testnisse",
+			"useravatar": "http://dnndev.me/Portals/_default/Skins/kk_Admin_Acklay/img/alf-aj.jpg",
+			"userroll": "1"
+		},
+		"adminview": {
+			"rollist": [{
+				"rollname": "Administrator",
+				"rollurl": "#"
+			},
+			{
+				"rollname": "kk_aj_Superuser",
+				"rollurl": "#"
+			}
+			],
+			"userlist": {
+				"username": "Testnisse",
+				"userurl": "#"
+			}
+		},
+		"status": "Upp and running"
+	}
+}
+
+///////////////////////////////////////////////////////////////////
+///////startsidan json debug //////////////////////////////////////
+// User info kk_aj_userinfojson.aspx
+{
+	"kk_aj_admin": {		
+		"userinfo": {
+			"userid": "105",
+			"username": "Testnisse",
+			"userfornamn":"andreas",
+			"userefternamn" : "Josefsson"
+			"useravatar":"http://dnndev.me/Portals/_default/Skins/kk_Admin_Acklay/img/alf-aj.jpg",
+			"userepost": "andreas.josefsson@kulturivast.se",
+			"usertel": "0708-183215",			
+			"userinfoheader": "Systemutvecklare på Kultur i Väst",
+			"userinfotext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.",
+			"userroll": "1",
+			"userrollname": "administratör"
+		},
+		"status": "userinfo is ok"
+	}
+}
+
+// senaste händelserna kk_aj_lasteventjson.aspx
+{
+	"kk_aj_admin": {
+		"latestcount": "2",
+		"latestevents": {
+			"messagecount": "1",
+			"messlist": [{
+				"eventid": "1",
+				"eventdate": "2017-01-15",
+				"eventmaintitle": "Skolbio förskolan: ",
+				"eventsubtitle": "Tigrar och tatueringar",
+				"eventcontent": "Maj, sex år och bor med sin farbror Sonny som är tatuerare, men de pratar ofta om att hitta en riktig familj till Maj.",
+				"eventurl": "www.barnensbibliotek.se",
+				"eventstatus": "Godkänd och publicerad"
+			},
+			{
+				"eventid": "2",
+				"eventdate": "2017-01-15",
+				"eventmaintitle": "Skolbio förskolan:  ",
+				"eventsubtitle": "Mustang",
+				"eventcontent": "Arrangemanget är bla bla bla bla bla bla bla bla bla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere finibus viverra. Nunc pharetra leo ac ante mollis, sit amet gravida neque egestas. Mauris elit eros, maximus at iaculis in, ullamcorper ac massa. Curabitur erat leo, efficitur ac sapien et, fringilla venenatis lorem. Duis dapibus metus erat, non viverra tortor posuere ac. Nam vel elit bibendum, efficitur arcu vitae, cursus augue. Fusce lobortis facilisis tempor. Suspendisse aliquam sed nunc sed bibendum. Vivamus et dictum risus. Mauris et dolor ac velit faucibus aliquam vel et sapien. Cras euismod, dolor sed congue ornare, neque magna pharetra mi, tristique posuere ex sapien id nulla. Donec pellentesque ipsum in posuere laoreet. Donec sed lectus faucibus, placerat ligula a, placerat nisl. Fusce tincidunt pretium est, vel sodales lectus iaculis ut. ",
+				"eventurl": "www.barnensbibliotek.se",
+				"eventstatus": "Godkänd och publicerad"
+			},
+			{
+				"eventid": "3",
+				"eventdate": "2017-01-17",
+				"eventmaintitle": "Skapande i skolan:",
+				"eventsubtitle": "bananskalning",
+				"eventcontent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere finibus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere finibus viverra. ",
+				"eventurl": "www.barnensbibliotek.se",
+				"eventstatus": "Nekad"
+			},
+			]
+		},		
+		"status": "listningen funkar"
+	}
+}
+
+///////////////////////////////////////////////////////////////////
+///////startsidan json debug //////////////////////////////////////
+
+// nya Ansokningar kk_aj_nyaansokjson.aspx
+{
+	"kk_aj_admin": {		
+		"ansokningstyp": "ny",
+		"ansokningarlista": {
+			"ansokningarcount": "1",
+			"ansokningar": [{
+				"ansokningid": "1",
+				"ansokningdate": "2017-01-15",
+				"ansokningtitle": "Skolbio förskolan: ",
+				"ansokningsubtitle": "Tigrar och tatueringar",
+				"ansokningutovare": "Lajvverkstaden",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"ja",
+				"ansokningkonstform": "Teater",
+				"ansokningutovare": "Lajvverkstaden",
+				"ansokninglast": "nej",
+				"ansokningpublicerad": "nej",
+				"ansokningstatus": "ny"
+			},{
+				"ansokningid": "2",
+				"ansokningdate": "2017-01-16",
+				"ansokningtitle": "Skolbio förskolan: ",
+				"ansokningsubtitle": "Mustang",
+				"ansokningutovare": "Lajvverkstaden",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"ja",				
+				"ansokningkonstform": "Teater",
+				"ansokninglast": "nej",
+				"ansokningpublicerad": "nej",
+				"ansokningstatus": "ny"
+			},{
+				"ansokningid": "2",
+				"ansokningdate": "2017-01-16",
+				"ansokningtitle": "Skapande i skolan:",
+				"ansokningsubtitle": "bananskalning",
+				"ansokningutovare": "Lajvverkstaden",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"nej",
+				"ansokningkonstform": "Dans",
+				"ansokninglast": "ja",
+				"ansokningpublicerad": "nej",
+				"ansokningstatus": "ny"				
+			}
+			]
+		},
+		"ansokningarlistacount": "4",
+		"ansokningarlistacurrentpage": "12",
+		"ansokningarlistatotalpages": "12",
+		"nyaansokningarcount":"12",
+		"approvedansokningarcount":"6",
+		"deniedansokningarcount":"6",
+		"status": "nyansokningar listan funkar"
+	}
+}
+
+// Godkända Ansokningar kk_aj_approvedansokjson.aspx
+{
+	"kk_aj_admin": {		
+		"ansokningstyp": "approved",
+		"ansokningarlista": {
+			"ansokningarcount": "1",
+			"ansokningar": [{
+				"ansokningid": "1",
+				"ansokningdate": "2017-01-15",
+				"ansokningtitle": "Skolbio förskolan: ",
+				"ansokningsubtitle": "Tigrar och tatueringar",
+				"ansokningutovare": "Lajvverkstaden",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"ja",
+				"ansokningkonstform": "Teater",
+				"ansokninglast": "nej",
+				"ansokningpublicerad": "ja",
+				"ansokningstatus": "approved"
+			},
+			{
+				"ansokningid": "2",
+				"ansokningdate": "2017-01-16",
+				"ansokningtitle": "Skolbio förskolan: ",
+				"ansokningsubtitle": "Mustang",
+				"ansokningutovare": "L--",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"ja",
+				"ansokningkonstform": "Teater",
+				"ansokninglast": "nej",
+				"ansokningpublicerad": "ja",
+				"ansokningstatus": "approved"
+			},
+			{
+				"ansokningid": "2",
+				"ansokningdate": "2017-01-16",
+				"ansokningtitle": "Skapande i skolan:",
+				"ansokningsubtitle": "bananskalning",
+				"ansokningutovare": "Lajvverkstaden",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"nej",
+				"ansokningkonstform": "Teater",
+				"ansokninglast": "ja",
+				"ansokningpublicerad": "ja",
+				"ansokningstatus": "approved"				
+			}
+			]
+		},
+		"ansokningarlistacount": "4",
+		"ansokningarlistacurrentpage": "12",
+		"ansokningarlistatotalpages": "12",
+		"nyaansokningarcount":"12",
+		"approvedansokningarcount":"6",
+		"deniedansokningarcount":"6",
+		"status": "approvedansokningar listan funkar"
+	}
+}
+
+// Nekade Ansokningar kk_aj_deniedansokjson.aspx
+{
+	"kk_aj_admin": {		
+		"ansokningstyp": "denied",
+		"ansokningarlista": {
+			"ansokningarcount": "1",
+			"ansokningar": [{
+				"ansokningid": "1",
+				"ansokningdate": "2017-01-15",
+				"ansokningtitle": "Skolbio förskolan: ",
+				"ansokningsubtitle": "Tigrar och tatueringar",
+				"ansokningutovare": "Nissesbyrå",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"ja",
+				"ansokningkonstform": "Teater",
+				"ansokninglast": "nej",
+				"ansokningpublicerad": "nej",
+				"ansokningstatus": "denied"
+			},
+			{
+				"ansokningid": "2",
+				"ansokningdate": "2017-01-16",
+				"ansokningtitle": "Skolbio förskolan: ",
+				"ansokningsubtitle": "Mustang",
+				"ansokningutovare": "Lajvverkstaden",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"ja",
+				"ansokningkonstform": "Teater",
+				"ansokninglast": "nej",
+				"ansokningpublicerad": "nej",
+				"ansokningstatus": "denied"
+			},
+			{
+				"ansokningid": "2",
+				"ansokningdate": "2017-01-16",
+				"ansokningtitle": "Skapande i skolan:",
+				"ansokningsubtitle": "bananskalning",
+				"ansokningutovare": "--",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"nej",
+				"ansokningkonstform": "Teater",
+				"ansokninglast": "ja",
+				"ansokningpublicerad": "nej",
+				"ansokningstatus": "denied"				
+			}
+			]
+		},
+		"ansokningarlistacount": "4",
+		"ansokningarlistacurrentpage": "12",
+		"ansokningarlistatotalpages": "12",
+		"nyaansokningarcount":"12",
+		"approvedansokningarcount":"6",
+		"deniedansokningarcount":"6",
+		"status": "deniedansokningar listan funkar"
+	}
+}
+
+// arkiverade Ansokningar kk_aj_archiveansokjson.aspx
+{
+	"kk_aj_admin": {		
+		"ansokningstyp": "archive",
+		"ansokningarlista": {
+			"ansokningarcount": "110",
+			"ansokningar": [{
+				"ansokningid": "1",
+				"ansokningdate": "2016-01-15",
+				"ansokningtitle": "Skolbio förskolan: ",
+				"ansokningsubtitle": "Tigrar och tatueringar",
+				"ansokningutovare": "Nissesbyrå",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"ja",
+				"ansokningkonstform": "Teater",
+				"ansokninglast": "nej",
+				"ansokningpublicerad": "nej",
+				"ansokningstatus": "archive"
+			},
+			{
+				"ansokningid": "2",
+				"ansokningdate": "2016-01-16",
+				"ansokningtitle": "Skolbio förskolan: ",
+				"ansokningsubtitle": "Mustang",
+				"ansokningutovare": "--",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"ja",
+				"ansokningkonstform": "Teater",
+				"ansokninglast": "nej",
+				"ansokningpublicerad": "nej",
+				"ansokningstatus": "archive"
+			},
+			{
+				"ansokningid": "2",
+				"ansokningdate": "2016-01-17",
+				"ansokningtitle": "Skapande i skolan:",
+				"ansokningsubtitle": "bananskalning",
+				"ansokningutovare": "Lajvverkstaden",
+				"ansokningurl": "www.barnensbibliotek.se",
+				"ansokningbilaga":"nej",
+				"ansokningkonstform": "Teater",
+				"ansokninglast": "ja",
+				"ansokningpublicerad": "nej",
+				"ansokningstatus": "archive"				
+			}
+			]
+		},
+		"ansokningarlistacount": "4",
+		"ansokningarlistacurrentpage": "1",
+		"ansokningarlistatotalpages": "110",
+		"nyaansokningarcount":"12",
+		"approvedansokningarcount":"6",
+		"deniedansokningarcount":"6",
+		"status": "archivedansokningar listan funkar"
+	}
+}
+
+///////////////////////////////////////////////////////////////////
+///////diareie json debug //////////////////////////////////////
+
+// diarielista kk_aj_diariejson.aspx
+{
+	"kk_aj_admin": {				
+		"ansokningarlista": {
+			"loggarcount": "1",
+			"loggar": [{
+				"loggid": "1",
+				"arrid": "1",
+				"loggdate": "2017-01-15",
+				"loggtitle": "Skolbio förskolan: ",
+				"loggsubtitle": "Tigrar och tatueringar",
+				"loggmotivering": "Maj, sex år och bor med sin farbror Sonny som är tatuerare, men de pratar ofta om att hitta en riktig familj till Maj.",
+				"arrurl": "www.barnensbibliotek.se",
+				"logguser":"Andreas Josefsson",				
+				"loggstatus": "Approved"
+			},
+			{
+				"loggid": "2",
+				"arrid": "2",
+				"loggdate": "2017-01-16",
+				"loggtitle": "Skolbio förskolan: ",
+				"loggsubtitle": "Mustang",
+				"loggmotivering": "Maj, sex år och bor med sin farbror Sonny som är tatuerare, men de pratar ofta om att hitta en riktig familj till Maj.",
+				"arrurl": "www.barnensbibliotek.se",
+				"logguser":"Andreas Josefsson",				
+				"loggstatus": "Edit"
+			},
+			{
+				"loggid": "3",				
+				"arrid": "3",
+				"loggdate": "2017-01-16",
+				"loggtitle": "Skapande i skolan:",
+				"loggsubtitle": "bananskalning",
+				"loggmotivering": "Maj, sex år och bor med sin farbror Sonny som är tatuerare, men de pratar ofta om att hitta en riktig familj till Maj.",
+				"arrurl": "www.barnensbibliotek.se",
+				"logguser":"Andreas Josefsson",				
+				"loggstatus": "Approved"		
+			},{
+				"loggid": "4",
+				"arrid": "2",
+				"loggdate": "2017-01-16",
+				"loggtitle": "Skolbio förskolan: ",
+				"loggsubtitle": "Mustang",
+				"loggmotivering": "Maj, sex år och bor med sin farbror Sonny som är tatuerare, men de pratar ofta om att hitta en riktig familj till Maj.",
+				"arrurl": "www.barnensbibliotek.se",
+				"logguser":"Andreas Josefsson",				
+				"loggstatus": "Edit"
+			},
+			{
+				"loggid": "5",
+				"arrid": "3",
+				"loggdate": "2017-01-16",
+				"loggtitle": "Skapande i skolan:",
+				"loggsubtitle": "bananskalning",
+				"loggmotivering": "Maj, sex år och bor med sin farbror Sonny som är tatuerare, men de pratar ofta om att hitta en riktig familj till Maj.",
+				"arrurl": "www.barnensbibliotek.se",
+				"logguser":"Andreas Josefsson",				
+				"loggstatus": "Ny"		
+			}
+			]
+		},
+		"currentpage": "1",
+		"totalpages": "110",
+		"status": "logglistan funkar"
+	}
+}
+
+////////////////////////////////////////////
+//topnav 
+
+{
+	"kk_aj_admin": {
+		"topmessagescount": "2",
+		"topmessages":[{
+				"title": "Ät gröt",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			},
+			{
+				"title": "kolla det senaste",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			}
+			]
+		},
+		"topnotificationcount": "2",
+		"topnotification":[{
+				"title": "Nu laddar vi om servern",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			},
+			{
+				"title": "Detta funkar ju bra",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			}
+			]
+		},
+		"toptaskcount": "2",
+		"toptask":[{
+				"title": "Nu laddar vi om servern",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			},
+			{
+				"title": "Detta funkar ju bra",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			}
+			]
+		},
+		"topuserinfo": {
+			"userid": "105",
+			"username": "Testnisse",
+			"useravatar": "http://dnndev.me/Portals/_default/Skins/kk_Admin_Acklay/img/alf-aj.jpg",
+			"userroll": "1"
+		},
+		"status": "mess is up and running"
+	}
+}
+
+// top nav Uppdelat //////////////////////////////////////////////////////
+//topnav message
+
+{
+	"kk_aj_admin": {
+		"topmessagescount": "2",
+		"topmessages":[{
+				"title": "Ät gröt",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			},
+			{
+				"title": "kolla det senaste",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			}
+			]
+		},
+		"status": "mess is up and running"
+	}
+}
+
+
+//topnav notification
+{
+	"kk_aj_admin": {
+		"topnotificationcount": "2",
+		"topnotification":[{
+				"title": "Nu laddar vi om servern",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			},
+			{
+				"title": "Detta funkar ju bra",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			}
+			]
+		},
+		"status": "notify is up and running"
+	}
+}
+
+//topnav task
+{
+	"kk_aj_admin": {
+		"toptaskcount": "2",
+		"toptask":[{
+				"title": "Nu laddar vi om servern",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			},
+			{
+				"title": "Detta funkar ju bra",
+				"url": "www.barnensbibliotek.se",
+				"date":"17-02-22"
+			}
+			]
+		},
+		"status": "task is up and running"
+	}
+}
+
+
+//topnav message
+{
+	"kk_aj_admin": {
+		"topuserinfo": {
+			"userid": "105",
+			"username": "Testnisse",
+			"useravatar": "http://dnndev.me/Portals/_default/Skins/kk_Admin_Acklay/img/alf-aj.jpg",
+			"userroll": "1"
+		},
+		"status": "User is Up and running"
+	}
+}
+
+// Log message
+{
+	"kk_aj_admin": {
+		"logcount": "2",
+		"loglist":[{
+				"logid": "1",
+				"logtypid": "1",
+				"logtyp": "systemevent",
+				"arrid":"1",
+				"arrrubrik": "test",
+				"arrutovare":"nisse",				
+				"statustypid":"1",
+				"statustyp" : "Nekad"
+				"changebyuserid": "2",
+				"changebyuser": "testnisse",
+				"datum":"17-02-22",
+				"beskrivning": "godkänd och klar"				
+			},
+			{
+				"logid": "2",
+				"logtypid": "3",
+				"logtyp": "systemevent",
+				"arrid":"1",
+				"arrrubrik": "test",
+				"arrutovare":"nisse",				
+				"statustypid":"1",
+				"statustyp" : "Ändrad"
+				"changebyuserid": "2",
+				"changebyuser": "testnisse",
+				"datum":"17-02-23",
+				"beskrivning": "godkänd och klar"				
+			}]
+		},
+		"status": "Logg is correct"
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Utövare json //////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+	"kk_aj_admin": {
+		"antalutovare":"2",
+		"Utovarelist" :[{
+			"Utovareid":"1",	
+			"Adress" : "Sturegatan 35",
+			"Efternamn" : "Jansson",
+			"Epost" : "test@test.se",
+			"Fornamn" : "Kalle",
+			"Kommun" : "Borås",
+			"Organisation" : "kompaniet",
+			"Ort" : "Borås",
+			"Postnr" : "53010",
+			"Telefon" : "033-123123",
+			"Weburl" : "www.dm.com",
+			"ovrigt":""
+			},
+			{
+			"Utovareid":"2",	
+			"Adress" : "Sturegatan 35",
+			"Efternamn" : "Jansson",
+			"Epost" : "test@test.se",
+			"Fornamn" : "Kalle",
+			"Kommun" : "Borås",
+			"Organisation" : "kompaniet",
+			"Ort" : "Borås",
+			"Postnr" : "53010",
+			"Telefon" : "033-123123",
+			"Weburl" : "www.dm.com",
+			"ovrigt":""	
+			}
+		],		
+		"status":"OK"
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// JSON DETAIL ////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Hämta arrangemang Detaljdata för ett arrangemang:
+search anrop: command= details, userid= uid, typ = arrid,
+/Api_v2/arrangemang/{command}/uid/{uid}/typ/{arrid}/devkey/alf?type=json&callback=testar
+localhost:60485/Api_v2/arrangemang/details/uid/3/typ/3/devkey/alf?type=json&callback=testar
+-------------------------------------------------------------------------------------------
+
+{
+	"kk_aj_admin": {
+		"Ansokningstyp": "Godkänd",
+		"ansokningarlista": {
+			"ansokningarcount": "1",
+			"ansokningar": [{
+				"ansokningid": 1,
+				"ansokningdate": "2017-04-20 11:02:45",
+				"ansokningtitle": "Dödsängel",
+				"ansokningsubtitle": "En föreställning om vår närhet till ondska och längtan te att slå sig fri.",
+				"ansokningutovare": "Teater Jaguar",
+				"ansokningurl": "",
+				"ansokningbilaga": "",
+				"ansokningpublicerad": "nej",
+				"ansokninglast": "ja",
+				"ansokningstatus": "Godkänd",
+				"ansokningtyp": "Föreställning på tuné",
+				"ansokningkonstform": "Teater",
+				"ansokningFaktalist": [{
+					"FaktaTypID": 1,
+					"Faktarubrik": "Arrangörsstöd ",
+					"FaktaValue": "Arrangören betalar 50%",
+					"Faktaid": 1
+				}, {
+					"FaktaTypID": 2,
+					"Faktarubrik": "Antal medverkande",
+					"FaktaValue": "1",
+					"Faktaid": 2
+				}, {
+					"FaktaTypID": 3,
+					"Faktarubrik": "Medverkande ",
+					"FaktaValue": "På scen: Torben Sigelius Kulin\r\nRegi: Viktoria Folkesson\r\nMusik: Lisen Rylander Löve\r\nKostym: Nonno Nordqvist\r\nScenografi: Ida Elisabet Liffner & Torben Sigelius Kulin\r\nText: Torben Sigelius Kulin \r\nLjus: Torben Sigelius Kulin\r\nTeknik: My Persson & Madeleine Strandberg\r\nDramaturgiskt bollplank: Lena Fridell\r\nProduktion: Naemi Pebaque",
+					"Faktaid": 3
+				}, {
+					"FaktaTypID": 4,
+					"Faktarubrik": "Period ",
+					"FaktaValue": "\r\nv 160115-171230 annars enligt överenskommelse.",
+					"Faktaid": 4
+				}, {
+					"FaktaTypID": 5,
+					"Faktarubrik": "Bokningsbar t.om",
+					"FaktaValue": "2018-06-30",
+					"Faktaid": 5
+				}, {
+					"FaktaTypID": 6,
+					"Faktarubrik": "Max publik",
+					"FaktaValue": "100",
+					"Faktaid": 6
+				}, {
+					"FaktaTypID": 7,
+					"Faktarubrik": "Från ålder",
+					"FaktaValue": "15",
+					"Faktaid": 7
+				}, {
+					"FaktaTypID": 8,
+					"Faktarubrik": "Till ålder ",
+					"FaktaValue": "19",
+					"Faktaid": 8
+				}, {
+					"FaktaTypID": 9,
+					"Faktarubrik": "Föreställningar per dag ",
+					"FaktaValue": "2",
+					"Faktaid": 9
+				}, {
+					"FaktaTypID": 10,
+					"Faktarubrik": "Byggtid ",
+					"FaktaValue": "120 min",
+					"Faktaid": 10
+				}, {
+					"FaktaTypID": 11,
+					"Faktarubrik": "Rivtid ",
+					"FaktaValue": "120 min",
+					"Faktaid": 11
+				}, {
+					"FaktaTypID": 12,
+					"Faktarubrik": "Bredd på scen",
+					"FaktaValue": "5,5 m",
+					"Faktaid": 12
+				}, {
+					"FaktaTypID": 13,
+					"Faktarubrik": "Djup på scen",
+					"FaktaValue": "4 m",
+					"Faktaid": 13
+				}, {
+					"FaktaTypID": 14,
+					"Faktarubrik": "Takhöjd över scen",
+					"FaktaValue": "3 m",
+					"Faktaid": 14
+				}, {
+					"FaktaTypID": 15,
+					"Faktarubrik": "Ljus ",
+					"FaktaValue": "\r\nTar med eget/Ingår",
+					"Faktaid": 15
+				}, {
+					"FaktaTypID": 16,
+					"Faktarubrik": "Bärhjälp behövs",
+					"FaktaValue": "Nej",
+					"Faktaid": 16
+				}, {
+					"FaktaTypID": 17,
+					"Faktarubrik": "El ",
+					"FaktaValue": "16 A",
+					"Faktaid": 17
+				}, {
+					"FaktaTypID": 18,
+					"Faktarubrik": "Övriga lokalkrav",
+					"FaktaValue": "Krav mörklagt.\r\nArrangören ordnar publikplatser om det ej finns befintliga.",
+					"Faktaid": 18
+				}, {
+					"FaktaTypID": 19,
+					"Faktarubrik": "Kostnad första arrangemanget",
+					"FaktaValue": "9800 kr",
+					"Faktaid": 19
+				}, {
+					"FaktaTypID": 20,
+					"Faktarubrik": "Kostnad andra arrangemanget ",
+					"FaktaValue": "8600 kr",
+					"Faktaid": 20
+				}, {
+					"FaktaTypID": 21,
+					"Faktarubrik": "Resor ingår/tillkommer",
+					"FaktaValue": "Tillkommer",
+					"Faktaid": 21
+				}, {
+					"FaktaTypID": 22,
+					"Faktarubrik": "Logi ingår/tillkommer ",
+					"FaktaValue": "Tillkommer",
+					"Faktaid": 22
+				}, {
+					"FaktaTypID": 23,
+					"Faktarubrik": "Logi ",
+					"FaktaValue": "2 enkelrum",
+					"Faktaid": 23
+				}, {
+					"FaktaTypID": 24,
+					"Faktarubrik": "Traktamente ingår/tillkommer",
+					"FaktaValue": "Tillkommer",
+					"Faktaid": 24
+				}, {
+					"FaktaTypID": 25,
+					"Faktarubrik": "Lärarhandledning",
+					"FaktaValue": "Ingår",
+					"Faktaid": 25
+				}, {
+					"FaktaTypID": 32,
+					"Faktarubrik": "Speltid (min)",
+					"FaktaValue": "60 min",
+					"Faktaid": 32
+				}, {
+					"FaktaTypID": 33,
+					"Faktarubrik": "Mörkläggning krävs",
+					"FaktaValue": "Ja nödvändigt",
+					"Faktaid": 33
+				}, {
+					"FaktaTypID": 34,
+					"Faktarubrik": "Ljud",
+					"FaktaValue": "\r\nTar med eget/Ingår",
+					"Faktaid": 34
+				}, {
+					"FaktaTypID": 35,
+					"Faktarubrik": "Kostnad paket",
+					"FaktaValue": "\r\nEnligt överenskommelse. kr",
+					"Faktaid": 35
+				}, {
+					"FaktaTypID": 36,
+					"Faktarubrik": "Övrigt om kostnad",
+					"FaktaValue": "Kostnad för andra arrangemanget gäller vid samma spelplats samma dag.",
+					"Faktaid": 36
+				}, {
+					"FaktaTypID": 37,
+					"Faktarubrik": "Resor",
+					"FaktaValue": "Faktiska kostnader hyra skåpbil fr Göteborg kr/mil",
+					"Faktaid": 37
+				}, {
+					"FaktaTypID": 38,
+					"Faktarubrik": "Traktamente",
+					"FaktaValue": "110 kr dag/pers, 220 kr dygn/pers. Kostnad ingår vid turné inom VG-regionen",
+					"Faktaid": 38
+				}, {
+					"FaktaTypID": 39,
+					"Faktarubrik": "Övrigt",
+					"FaktaValue": "1 tekniker medföljer på turnén",
+					"Faktaid": 39
+				}],
+				"ansokningContent": "Göteborg 2015. Angelo är på väg från sin fars begravning med blodig kniv i handen.  \r\nBuenos Aires 1979. Carlos är på jakt efter gamla SS-officerare däribland sin egen far.  \r\nAuschwitz 1944. Axel, en lägervakt förälskar sig i en av sina fångar.\r\n\r\nDödsängel skildrar vårt förhållande till ondska, kärlek och hämnd. Med tät spänning vecklas en släkthistoria ut och hemligheter kommer upp till ytan.\r\n\r\nVia dagboksanteckningar, brev och illustrerade projektioner slungas vi runt i både tid och rum och släktträdet broderas ut. Historien återupprepas och hämden tar aldrig slut. \r\nOm fördomar, hämnd och historiens felsteg.\r\n\r\n\"Skrämmande trovärdigt\" Alba\r\n\r\n\"Utomordentligt välspelad\" Göteborgsposten",
+				"ansokningUsername": "2",
+				"ansokningMediaImage": {
+					"MediaUrl": "http://leto.premium.se/vgr/media/uploads/47/2414/TeaterJaguar_Dodsangel_IdaLiffner_PosterA2_t.jpg",
+					"MediaFilename": "TeaterJaguar_Dodsangel_IdaLiffner_PosterA2_t.jpg",
+					"MediaSize": "3 kb",
+					"MediaAlt": "Dödsängel",
+					"MediaFoto": "Ida Elisabet Liffner"
+				},
+				"ansokningMovieClip": {
+					"MediaUrl": "https://www.youtube.com/embed/BfUhTpYlQoE",
+					"MediaFilename": "https://youtu.be/TpVIOe-kRAo",
+					"MediaSize": "12.30Min",
+					"MediaAlt": "mustang Filmclip",
+					"MediaFoto": null
+				},
+				"ansokningUtovarid": 0,
+				"ansokningUtovardata": {
+					"UtovarID": 1,
+					"Organisation": "Teater Jaguar",
+					"Fornamn": "Naemi",
+					"Efternamn": "Pebaque",
+					"Telefon": "031132310 0707317425",
+					"Adress": "Storgatan 3",
+					"Postnr": "41124",
+					"Ort": "Göteborg",
+					"Epost": "kontoret@teaterjaguar.se",
+					"Kommun": "Göteborg",
+					"Weburl": "www.teaterjaguar.se"
+				}
+			}]
+		},
+		"Ansokningarlistacount": 1,
+		"Ansokningarlistacurrentpage": 0,
+		"Ansokningarlistatotalpages": 1,
+		"nyaansokningarcount": 13,
+		"approvedansokningarcount": 2,
+		"deniedansokningarcount": 1,
+		"status": "Arrangemangsdetaljer är listade!"
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// JSON ADD Arrangemang ///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+Lägg till Nytt arrangemang skicka denna json via POST till api:t
+
+User-Agent: Fiddler
+Host: localhost:60485
+Content-Length: 1136
+Content-Type: application/json
+
+url POST: http://localhost:60485/Api_v2/arrangemang/add/devkey/alf
+
+{
+	"Arrangemangtyp":"1",	
+	"rubrik":"NY TEST",
+	"underrubrik":"testar att skicka in till servern",
+	"innehall":"massa text",
+	"konstform":"10",	
+	"mainImage": {
+		"MediaAlt":"finbild med banan",
+		"MediaFilename":"1636199.jpg",
+        "MediaFoto":"andreas Josefsson",
+        "MediaSize":"300kb",
+        "MediaUrl":"http://p1.pichost.me/i/40/1636199.jpg" 
+	},
+    "MediaClip":{
+		"MediaAlt":"M4A1 Revalorise Unicum Guide/Review, When to Snipe vs Push",
+		"MediaFilename":"https://youtu.be/RwqYNeFocBs",
+        "MediaFoto":"Taugrim",
+        "MediaSize":"16.33min",
+        "MediaUrl":"https://www.youtube.com/embed/RwqYNeFocBs" 
+	},                  
+	"utovare":"0",	
+	"UtovareData" :{
+		"Adress" : "grönahögsvägen 15",
+		"Efternamn" : "Josefsson",
+		"Epost" : "test@test.se",
+		"Fornamn" : "B-G",
+		"Kommun" : "Ulricehamn",
+		"Organisation" : "biomatec",
+		"Ort" : "Ulricehamn",
+		"Postnr" : "52330",
+		"Telefon" : "0321-15310",
+		"Weburl" : "www.biomatec.se"	
+	},
+	"Faktalist": [{	     
+		"FaktaTypID": "12",
+		"FaktaValue":"Brett ska de vara"
+		},
+		{	     
+		"FaktaTypID": "14",
+		"FaktaValue":"högt ska de vara"
+	}]	 
+}
+    
+// alla properties i arrangemangJSON alla behövs dock inte för att lägga till ny endel är för definierade
+
+{
+	"ArrangemangStatus": "3",
+	"Arrangemangtyp":"1",	
+	"Arrid":"1",
+	"rubrik":"rubriktext",
+	"underrubrik":"underrubrik",
+	"innehall":"massa text",
+	"konstform":"2",	
+	"mainImage": {
+		"MediaAlt":"finbild med banan",
+		"ImageFilename":"bildnummer1.jpg",
+        "ImageFoto":"andreas Josefsson",
+        "ImageSize":"300kb",
+        "ImageUrl":"s-media-cache-ak0.pinimg.com/originals/a1/3d/7f/a13d7f89a80cad02f76830f87a7eaf52.jpg" 
+	},
+    "MediaClip":{
+		"MediaAlt":"finbild",
+		"MediaFilename":"FILMnummer1.jpg",
+        "MediaFoto":"andreas Josefsson",
+        "MediaSize":"300kb",
+        "MediaUrl":"p1.pichost.me/i/40/1636199.jpg" 
+	},                  
+	"utovare":"0",	
+	"UtovareData" :{
+		"Adress" : "grönahögsvägen 15",
+		"Efternamn" : "Josefsson",
+		"Epost" : "test@test.se",
+		"Fornamn" : "B-G",
+		"Kommun" : "Ulricehamn",
+		"Organisation" : "biomatec",
+		"Ort" : "Ulricehamn",
+		"Postnr" : "52330",
+		"Telefon" : "0321-15310",
+		"Weburl" : "www.biomatec.se"	
+	},
+	"Faktalist": [{	     
+		"FaktaTypID": "12",
+		"FaktaValue":"Brett ska de vara"
+		},
+		{	     
+		"FaktaTypID": "14",
+		"FaktaValue":"högt ska de vara"
+		}],	
+	"Datum":"",	 
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// JSON DELETE Arrangemang ////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+     
+DELETE Ta bort arrangemang via arrangemangid
+api anrop: Api_v2/arrangemang/{userid}/del/{arrid}/devkey/alf
+url DELETE http://localhost:60485/Api_v2/arrangemang/0/del/56/devkey/alf
+server DELETE url: http://kulturkatalog.kivdev.se:8080/Api_v2/arrangemang/0/del/18/devkey/alf
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// JSON EDIT ArrangemangDETAILS PostTo SERVER API VALUES//////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+Anrop POST:
+url: http://localhost:60485/Api_v3/arrangemang/{cmd}/val/{userid}/devkey/alf
+exempel: http://localhost:60485/Api_v3/arrangemang/fakta/val/2/devkey/alf
+Content-Type: application/json
+
+{
+	"arrid": "23",
+    "contentid": "1",
+	"rubrik": "rubriktext",
+	"underrubrik": "underrubrik",
+	"innehall": "massa text",
+	"konstformid": "2",
+	"arrangemangtypid": "1",
+	"utovareid": "3",
+	"publicerad": "nej",
+	"faktaid": "1",
+	"faktaval": "Brett ska de vara",
+	"mediaid": "1",
+	"mediaalt": "finbild med banan",
+	"mediafilename": "bildnummer1.jpg",
+	"mediafoto": "andreas Josefsson",
+	"mediasize": "300kb",
+	"mediaurl": "s-media-cache-ak0.pinimg.com/originals/a1/3d/7f/a13d7f89a80cad02f76830f87a7eaf52.jpg",
+	"mediavald": "nej",
+	"mediatyp": "1"
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// JSON Update Arrangemang status till(ny, godkänd, nekad, arkiv) /////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+{
+	"CmdTyp": "arrstat",
+	"Userid": "3",
+	"Arrid": "25",
+	"Logtypid": "1",
+	"Logstatusid": "4",
+	"Logbeskrivning": "Nekad för att beskivande text varför",
+	"UpdValue": "3"
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Arrangemangform ///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+base input (1):
+arrangemangstypid = 1 	(Föreställning på tuné)
+konstformid = 6 		(musik)
+utovarid = 1			(Teater Jaguar ->hela posten)
+	Om utövare inte finns skapa nytt
+	fylls i och skickas alltid med.. om utövarid är tomt måste alla värden vara ifyllda. annars hoppas dom över
+	
+adminuserid =2 			(användaren som är ansvarig för området)
+arrangemangstyp = 1 	<-- Behöver inte skickas med alltid nytt (nytt(1) eller godkänt(2) eller nekat(3))
+publicerad= nej			<-- Behöver inte skickas med alltid nej
+lookedat = nej			<-- Behöver inte skickas med alltid nej
+visningsperiod= 2017	(det år som arrangemanget skall visas under)
+SKAPA för att få arrid ------------------------------------------------------------------------------#
+
+(skapa log arrid och eventlog)
+
+base content (2):	
+	Rubrik = rubrik på arrangemanget
+	Underrubrik = underrubrik om det behövs
+	ContentText	= beskrivande text om arrangemanget
+	ImageUrl = huvudbilden som skall visas till arrangemanget
+	ImageFilename=	filnamnet
+	ImageSize	= filstorlek
+	ImageAlt	= alt text
+	ImageFotograf	=foto
+	MovieClipUrl	= länk till youtube
+	MovieClipFilename	=namn
+	MovieClipSize	= längd på klipp
+	MovieClipAlt	= alttext
+	MovieClipCredits =	creditnamn
+
+SKAPA och lägg till arrid och contentid i kopplingstabell -------------------------------------------#
+	
+base Fakta (3):
+	lägg till valfria fakta
+faktatypid
+faktavalue
+lägg till arrid
+
+
+
+STARTADE TESTEN med arrid 16
+
+		tmparr.Arrangemangtyp = 3 'författarbesök
+        tmparr.ArrangemangStatus = 1
+        tmparr.Innehall = "string av text"
+		tmparr.Konstform = 2 'dans
+        (tmparr.MainImage = ->)
+			txtImageAlt = "finbild"
+            txtImageFilename = "bildnummer1.jpg"
+            txtImageFoto = "andreas Josefsson"
+            txtImageSize = "300kb"
+            txtImageUrl = "s-media-cache-ak0.pinimg.com/originals/a1/3d/7f/a13d7f89a80cad02f76830f87a7eaf52.jpg"           
+        (tmparr.MediaClip = ->)
+			txtMediaAlt = "finFILM Blade runner"
+            txtMediaFilename = "FILMnummer1.jpg"
+            txtMediaFoto = "andreas Josefsson"
+            txtMediaSize = "300kb"
+            txtMediaUrl = "youtu.be/gCcx85zbxz4"
+        txtRubrik = "Konstrunda Ulricehamn"
+        UnderRubrik = "av ulricehamnare för ulricehamnare"
+        drpUtovare = 0 ' är denna större än 0 körs utövardata annar inte!
+        (tmparr.UtovareData = ->)
+			Adress = "grönahögsvägen 15"
+			Efternamn = "Josefsson"
+			Epost = "test@test.se"
+			Fornamn = "B-G"
+			Kommun = "Ulricehamn"
+			Organisation = "biomatec"
+			Ort = "Ulricehamn"
+			Postnr = "52330"
+			Telefon = "0321-15310"
+			Weburl = "www.biomatec.se"
+        (tmparr.Faktalist = ->)
+			1	Arrangörsstöd 
+			2	Antal medverkande
+			3	Medverkande 
+			4	Period 
+			5	Bokningsbar t.om
+			6	Max publik
+			7	Från ålder
+			8	Till ålder 
+			9	Föreställningar per dag 
+			10	Byggtid 
+			11	Rivtid 
+			12	Bredd på scen
+			13	Djup på scen
+			14	Takhöjd över scen
+			15	Ljus 
+			16	Bärhjälp behövs
+			17	El 
+			18	Övriga lokalkrav
+			19	Kostnad första arrangemanget
+			20	Kostnad andra arrangemanget 
+			21	Resor ingår/tillkommer
+			22	Logi ingår/tillkommer 
+			23	Logi 
+			24	Traktamente ingår/tillkommer
+			25	Lärarhandledning
+			32	Speltid (min)
+			33	Mörkläggning krävs
+			34	Ljud
+			35	Kostnad paket
+			36	Övrigt om kostnad
+			37	Resor
+			38	Traktamente
+			39	Övrigt
+			40	Kostnad tredje arrangemanget
+        tmparr.Datum = Date.Now
+		
+		
+//--ANROP POST JSON ----------------------------------------------------------
+
+{
+	"ArrangemangStatus": "3",
+	"Arrangemangtyp":"1",	
+	"Arrid":"1",
+	"Datum":"",	
+	"Faktalist": [{	     
+		"FaktaTypID": "12",
+		"Faktarubrik":"",
+		"FaktaValue":"Brett ska de vara"
+		},
+		{	     
+		"FaktaTypID": "14",
+		"Faktarubrik":"",
+		"FaktaValue":"högt ska de vara"
+		}],
+	"innehall":"massa text",
+	"konstform":"2",
+	
+		
+} ArrangemangStatus As String
+        Public Property Arrangemangtyp As String
+        Public Property Arrid As Integer
+        Public Property Datum As String
+        Public Property Faktalist As List(Of faktainfo)
+        Public Property Innehall As String
+        Public Property Konstform As String
+        Public Property LookedAt As String
+        Public Property MainImage As mediaInfo
+        Public Property MediaClip As mediaInfo
+        Public Property Publicerad As String
+        Public Property Rubrik As String
+        Public Property UnderRubrik As String
+        Public Property Username As String
+        Public Property Utovare As String
+        Public Property UtovareData As utovareInfo
+
+		
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Test arrangemang för POST till api //////////////////////////////////////////////////////////////////////////////////////////////////////
+/// http://kulturkatalog.kivdev.se:8080/Api_v2/arrangemang/add/devkey/alf //////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Content-Type: application/json //////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+	"Arrangemangtyp":"3",	
+	"rubrik":"Författare Nisse Hult",
+	"underrubrik":"Historia nu och då!",
+	"innehall":"Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker. ",
+	"konstform":"5",	
+	"mainImage": {
+		"MediaAlt":"författaare",
+		"MediaFilename":"minionförfattare.jpg",
+        "MediaFoto":"andreas Josefsson",
+        "MediaSize":"300kb",
+        "MediaUrl":"https://s-media-cache-ak0.pinimg.com/736x/07/bd/8a/07bd8a2ff0f36bbaf7a8372e6e8bcf0c.jpg" 
+	},
+    "MediaClip":{
+		"MediaAlt":"M4A1 Revalorise Unicum Guide/Review, When to Snipe vs Push",
+		"MediaFilename":"https://youtu.be/qTSDL94_Y7M",
+        "MediaFoto":"Minion in black",
+        "MediaSize":"8.26min",
+        "MediaUrl":"https://www.youtube.com/embed/qTSDL94_Y7M" 
+	},                  
+	"utovare":"0",	
+	"UtovareData" :{
+		"Adress" : "Sturegatan 35",
+		"Efternamn" : "Jansson",
+		"Epost" : "test@test.se",
+		"Fornamn" : "Kalle",
+		"Kommun" : "Borås",
+		"Organisation" : "kompaniet",
+		"Ort" : "Borås",
+		"Postnr" : "53010",
+		"Telefon" : "033-123123",
+		"Weburl" : "www.dm.com"	
+	},
+	"Faktalist": [{	     
+		"FaktaTypID": "12",
+		"FaktaValue":"50m"
+		},
+		{	     
+		"FaktaTypID": "14",
+		"FaktaValue":"20m"
+	}]	 
+}
+    
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+{
+	"Arrangemangtyp": "3",
+	"rubrik": "Ny konst för hela familjen",
+	"underrubrik": "",
+	"innehall": "Det är ett välkänt faktum att läsare distraheras av läsbar text på en sida när man skall studera layouten. ",
+	"konstform": "4",
+	"mainImage": {
+		"MediaAlt": "Minioner",
+		"MediaFilename": "minionformare.jpg",
+		"MediaFoto": "Amazon",
+		"MediaSize": "1 mb",
+		"MediaUrl": "https://images-na.ssl-images-amazon.com/images/G/01/aplusautomation/vendorimages/bf9d98e6-4889-4901-9283-76af7c0a45f0.jpg._CB289162043__SL300__.jpg"
+	},
+	"MediaClip": {
+		"MediaAlt": "Learn and Understand AngularJS - The First 50 Minutes",
+		"MediaFilename": "https://youtu.be/ejBkOjEG6F0",
+		"MediaFoto": "Tony Alicea",
+		"MediaSize": "49.40 min",
+		"MediaUrl": "https://www.youtube.com/embed/ejBkOjEG6F0"
+	},
+	"Arrgruppid":"0",
+	"utovare": "0",
+	"UtovareData": {
+		"Adress": "viskaholm 135",
+		"Efternamn": "Felldin",
+		"Epost": "test@test.se",
+		"Fornamn": "Torbjörn",
+		"Kommun": "Skara",
+		"Organisation": "Bondepartiet",
+		"Ort": "Skara",
+		"Postnr": "23010",
+		"Telefon": "044-123123",
+		"Weburl": "www.kent.nu"
+	},
+	"Faktalist": [{
+			"FaktaTypID": "12",
+			"FaktaValue": "50m"
+		},
+		{
+			"FaktaTypID": "14",
+			"FaktaValue": "20m"
+		},
+		{
+			"FaktaTypID": "32",
+			"FaktaValue": "60 min"
+		},
+		{
+			"FaktaTypID": "35",
+			"FaktaValue": "Enligt överenskommelse. kr"
+		},
+		{
+			"FaktaTypID": "36",
+			"FaktaValue": "Kostnad för andra arrangemanget gäller vid samma spelplats samma dag."
+		}
+	]
+}
+
+// add arrangemang med förnyande och befinglig utövare 
+// http://localhost:60485/Api_v2/arrangemang/add/devkey/alf
+// POST Content-Type: application/json
+{
+	"Rubrik": "skickar mail",
+	"UnderRubrik": "med funktionen som fungerar",
+	"Innehall": "Det funkar kanonbra lokalt",
+	"Arrangemangtyp": "1",
+	"Konstform": "4",
+	"Faktalist": [{
+		"Faktaid": 0,
+		"FaktaTypID": 1,
+		"Faktarubrik": "Arrangörsstöd ",
+		"FaktaValue": "Arrangören betalar 50%"
+	}, {
+		"Faktaid": 0,
+		"FaktaTypID": 23,
+		"Faktarubrik": "Logi ",
+		"FaktaValue": "arrangören ordnar och vi inte kommer överens om annat"
+	}],
+	"MediaList": [{
+		"MediaID": "0",
+		"MediaUrl": "https://www.youtube.com/embed/CyR87NV1Y20",
+		"MediaFilename": "teste",
+		"MediaSize": "",
+		"MediaAlt": "test",
+		"MediaFoto": "stes",
+		"MediaTyp": "2",
+		"MediaVald": null,
+		"mediaTitle": null,
+		"mediaBeskrivning": null,
+		"mediaLink": null,
+		"sortering": ""
+	}, {
+		"MediaID": "0",
+		"MediaUrl": "https://www.defensetech.org/wp-content/uploads/2017/03/Russian-T-90A-tank-1200x800.jpg",
+		"MediaFilename": "",
+		"MediaSize": "12mb",
+		"MediaAlt": "tanks",
+		"MediaFoto": "andreas",
+		"MediaTyp": "1",
+		"MediaVald": null,
+		"mediaTitle": "tanks för den envise",
+		"mediaBeskrivning": "jobbig tank att möta\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+		"mediaLink": "http://www.defensetech.org/wp-content/uploads/2017/03/Russian-T-90A-tank-1200x800",
+		"sortering": "0"
+	}],
+	"Username": "",
+	"MainImage": {
+		"MediaID": 0,
+		"MediaUrl": "http://leto.premium.se/vgr/media/uploads/40/1547/Sagofen_Isadora_8_t.jpg",
+		"MediaFilename": "test",
+		"MediaSize": "4kb",
+		"MediaAlt": "test1",
+		"MediaFoto": "test1",
+		"MediaTyp": "",
+		"MediaVald": "nej",
+		"mediaTitle": "",
+		"mediaBeskrivning": "",
+		"mediaLink": "",
+		"sortering": "0"
+	},
+	"Utovare": "0",
+	"UtovareData": {
+		"UtovarID": "3",
+		"Organisation": "Teater Jaguar",
+		"Fornamn": "Naemi",
+		"Efternamn": "Pebaque",
+		"Telefon": "031132310 0707317425",
+		"Adress": "Storgatan 3",
+		"Postnr": "41124",
+		"Ort": "Göteborg",
+		"Epost": "kontoret@teaterjaguar.se",
+		"Kommun": "Göteborg",
+		"Weburl": "www.teaterjaguar.se"
+	}
+}
+
+///UTÖVARE/////////////////////////////
+//POST ///////////////////////////////
+
+{
+	"UtovarID" : 6,
+	"Organisation" : "UBAB",
+	"Fornamn" : "Gösta",
+	"Efternamn" : "sandin",
+	"Telefon" : "0321-12310",
+	"Adress" : "jönköpingsvägen 15",
+	"Postnr" : "52350",
+	"Ort" : "Timmele",
+	"Epost" : "sandin@test.se",
+	"Kommun" : "Ulricehamn",
+	"Weburl" : "www.ubab.se",
+	"Bild" : null
+}
